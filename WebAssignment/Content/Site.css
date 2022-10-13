@@ -1,0 +1,173 @@
+﻿@font-face {
+    font-family: 'Josefin Sans', sans-serif;
+    src: url(../fonts/JosefinSans-Regular.ttf);
+    font-family: 'Vollkorn', serif;
+    src: url(../fonts/Vollkorn-Regular.ttf);
+}
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+    background-color: #777;
+    border-color: #fff;
+}
+
+/* footer */
+
+footer .footer {
+    overflow: hidden;
+    background: rgba(180, 159, 141, .5);
+    text-decoration: none;
+    width: auto;
+    text-align: left;
+    padding: 16px 16px;
+}
+
+footer .footer .footer-left, .footer .footer-middle, .footer .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* footer left */
+
+.footer .footer .footer-left {
+    width: 80%;
+    margin-top: 12px;
+}
+
+footer .footer .footer-left h1 {
+    color: #674740;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 24px;
+}
+
+footer .footer .footer-links a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Vollkorn', serif;
+    color: inherit;
+}
+
+footer .footer .footer-links li {
+    list-style: none;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Vollkorn', serif;
+    color: inherit;
+}
+
+footer .footer .footer-links {
+    color: #92706e;
+    margin-left: -10px;
+    margin-top: 12px;
+}
+
+footer .footer .footer-copyright {
+    font-family: 'Vollkorn', serif;
+    color: #674740;
+    margin-left: 32px;
+    margin-top: 24px;
+}
+
+/* footer middle */
+footer .footer .footer-middle {
+    width: 30%;
+    margin-left: 84px;
+    margin-top: 24px;
+}
+
+footer .footer .footer-middle p {
+    font-family: 'Vollkorn', serif;
+    color: #674740;
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 0;
+}
+
+footer .footer .footer-middle i {
+    color: #674740;
+    font-size: 36px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+footer .footer .footer-middle p span {
+    display: block;
+    line-height: 2;
+}
+
+footer .footer .footer-middle p a {
+    color: #92706e;
+}
+
+/* footer right */
+
+footer .footer .footer-right {
+    width: 30%;
+    margin-left: 36px;
+}
+
+footer .footer-right h2 {
+    color: #674740;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 20px;
+    display: block;
+}
+
+footer .footer-right .about {
+    line-height: 20px;
+    margin: 0;
+    display: flex;
+}
+
+footer .footer-right p {
+    color: #674740;
+    font-family: 'Vollkorn', serif;
+}
+
+footer .footer .social {
+    margin-top: 24px;
+}
+
+footer .footer .social a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    font-size: 36px;
+    text-align: center;
+    line-height: 42px;
+    margin-right: 24px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: #674740;
+}

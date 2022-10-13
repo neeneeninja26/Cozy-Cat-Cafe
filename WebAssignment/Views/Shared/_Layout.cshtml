@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Cozy Cat Cafe</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,300;1,400&family=Vollkorn:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+    <script src="myscript.js"></script>
+    <script src="https://unpkg.com/phosphor-icons"></script>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" title="more options">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Cozy Cat Cafe", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Menu", "Menu", "Home")</li>
+                    <li>@Html.ActionLink("Cats", "Cats", "Home")</li>
+                    <li>@Html.ActionLink("About Us", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact Us", "Contact", "Home")</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <div class="footer">
+                <div class="footer-left">
+                    <h1>Cozy Cat Cafe</h1>
+                    <ul class="footer-links">
+                        <li>@Html.ActionLink("Home", "Index", "Home") |</li>
+                        <li>@Html.ActionLink("Menu", "Menu", "Home") |</li>
+                        <li>@Html.ActionLink("Cats", "Cats", "Home") |</li>
+                        <li>@Html.ActionLink("About Us", "About", "Home") |</li>
+                        <li>@Html.ActionLink("Contact Us", "Contact", "Home")</li>
+                    </ul>
+                    <p class="footer-copyright">Cozy Cat Cafe <i class="ph-copyright"></i> 2022</p>
+                </div>
+                <div class="footer-middle">
+                    <div class="location">
+                        <i class="ph-storefront-bold"></i>
+                        <p><span>143 Tabby Boulevard</span>Persian County, Wellington</p>
+                    </div>
+                    <div class="phone">
+                        <i class="ph-phone-bold"></i>
+                        <p>+649372838</p>
+                    </div>
+                    <div class="mail">
+                        <i class="ph-paper-plane-tilt-bold"></i>
+                        <p><a href="mailto:cozycatcafe@stores.cozy.co.nz">cozycatcafe@stores.cozy.co.nz</a></p>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <div class="About">
+                        <h2>About Us </h2>
+                        <p>
+                            Cozy cat cafe prides itself in being connected to many cat rescues across Wellington Region.
+                            We also pride ourself in our coffee, that is sourced from sustainable businesses.
+                        </p>
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="ph-facebook-logo-bold"></i></a>
+                        <a href="#"><i class="ph-instagram-logo-bold"></i></a>
+                        <a href="#"><i class="ph-linkedin-logo-bold"></i></a>
+                        <a href="#"><i class="ph-tiktok-logo-bold"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
